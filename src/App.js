@@ -27,9 +27,7 @@ class App extends Component {
         // }
 
     }
-    constructor(){
-      super()
-    }
+
     handleNameChange = (evt) =>{
 
         this.setState({currentStockName:evt.target.value})
@@ -61,7 +59,7 @@ class App extends Component {
             dateTime:this.state.currentStockDateTime
         }
         addStock(this.state.stocksArr,newStock).then(newStocksArr=>this.setState({stocksArr:newStocksArr,currentStockName:"",currentStockPrice:"",currentStockQuantity:"",currentStockDateTime:""}));
-       // sessionStorage.setItem('state', this.state);
+       
     }
   render() {
     return (
