@@ -2,6 +2,7 @@
   "name": "stock-app",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://myname.github.io/myapp",
   "dependencies": {
     "axios": "^0.16.2",
     "bootstrap": "^3.3.7",
@@ -23,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "cd react-ui/ && npm install --only=dev && npm install && npm run build"
   },
   "engines": {
     "node": "6.11.0",
